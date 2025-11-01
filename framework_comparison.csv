@@ -1,0 +1,18 @@
+Feature,Hardhat,Truffle Suite,Foundry
+Release Year,2019,2015,2021
+Language,JavaScript/TypeScript,JavaScript,Solidity
+Testing Speed,Fast,Moderate,Very Fast
+Console.log Support,Native (console.log),Via Ganache plugin,Native (console.log)
+Error Messages,Detailed Solidity stack traces,Basic error messages,Detailed stack traces
+Local Blockchain,Hardhat Network (built-in),Ganache (separate),Anvil (built-in)
+Plugin Ecosystem,Extensive,Moderate,Growing
+Learning Curve,Moderate,Easy,Steep
+Documentation,Excellent,Good,Good
+Mainnet Forking,Yes,Yes (via Ganache),Yes
+TypeScript Support,Native,Requires setup,Limited
+Community Size,Large and growing,Large (established),Growing rapidly
+Best For,Modern dApp development,"Beginners, traditional workflow",Performance-critical testing
+Gas Reporting,Via plugin,Via plugin,Built-in
+Deployment Scripts,Ignition modules,Migration scripts,Solidity scripts
+Debugging Tools,Hardhat Console,Truffle Debugger,Forge debugger
+Network Configuration,hardhat.config.js,truffle-config.js,foundry.toml

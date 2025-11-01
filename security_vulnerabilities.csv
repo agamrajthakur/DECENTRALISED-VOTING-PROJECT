@@ -1,0 +1,11 @@
+Vulnerability,Description,Attack Example,Prevention Method,Severity
+Reentrancy Attack,External call allows re-entering function before state update,DAO Hack (2016) - $60M stolen,"ReentrancyGuard, Checks-Effects-Interactions pattern",Critical
+Integer Overflow/Underflow,Arithmetic operations exceed data type limits,BatchOverflow Bug (2018),Use Solidity ^0.8.0 or SafeMath library,High
+Access Control Issues,Unauthorized users can call privileged functions,Parity Wallet Hack (2017),"Implement Ownable, RBAC modifiers",Critical
+Timestamp Dependence,Miners can manipulate block.timestamp,Lottery contract manipulation,Avoid block.timestamp for critical logic,Medium
+Front-running Attack,Attacker sees pending transaction and submits higher gas,DEX front-running,"Commit-reveal schemes, batch transactions",High
+Denial of Service (DoS),Contract becomes unusable due to resource exhaustion,Gas limit attacks on loops,"Limit loop iterations, use pull over push",Medium
+Logic Errors,Flawed business logic in contract,Incorrect calculation formulas,"Thorough testing, formal verification",Variable
+Insecure Randomness,Predictable random number generation,Gambling contract exploits,Use Chainlink VRF or commit-reveal,High
+Unchecked External Calls,Failed external calls not properly handled,Funds stuck in contracts,"Check return values, use require()",Medium
+Sybil Attack,Multiple fake identities created,Vote manipulation,"KYC verification, identity proofs",Critical
